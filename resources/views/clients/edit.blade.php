@@ -243,6 +243,7 @@
 								->label('reminders')
 								->value(1) !!}
 						@endif
+						{!! Former::select('toggl_id')->addOption('','')->fromQuery(\Syncer\Models\TogglClient::getSelectOptions(), 'name','toggl_id')->label('Toggl Client') !!}
 					</div>
 					<div role="tabpanel" class="tab-pane" id="notes">
 						{!! Former::textarea('public_notes')->rows(6) !!}

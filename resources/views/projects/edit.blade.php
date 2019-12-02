@@ -40,6 +40,8 @@
 
                 {!! Former::text('name') !!}
 
+                {!! Former::select('toggl_id')->addOption('','')->fromQuery(\Syncer\Models\TogglProject::getSelectOptions(), 'name','toggl_id')->label('Toggl Project') !!}
+
 				{!! Former::text('due_date')
 	                        ->data_date_format(Session::get(SESSION_DATE_PICKER_FORMAT, DEFAULT_DATE_PICKER_FORMAT))
 	                        ->addGroupClass('due_date')

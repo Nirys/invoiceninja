@@ -30,6 +30,7 @@ class Project extends EntityModel
         'budgeted_hours',
         'custom_value1',
         'custom_value2',
+        'toggl_id',
     ];
 
     /**

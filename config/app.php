@@ -163,6 +163,7 @@ return [
         PragmaRX\Google2FALaravel\ServiceProvider::class,
         'Chumper\Datatable\DatatableServiceProvider',
         Laravel\Tinker\TinkerServiceProvider::class,
+        Syncer\InvoiceNinja\ServiceProvider::class,
 
         /*
          * Application Service Providers...

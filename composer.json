@@ -53,6 +53,7 @@
         "maatwebsite/excel": "~2.0",
         "mpdf/mpdf": "7.1.7",
         "nesbot/carbon": "^1.26",
+        "nirys/toggl-invoiceninja-sync": "1.0.1",
         "nwidart/laravel-modules": "2.0.*",
         "omnipay/authorizenet": "dev-solution-id as 2.5.0",
         "omnipay/firstdata": "^2.4",
@@ -152,6 +153,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/davidbankes/omnipay-firstdata.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Nirys/toggl-invoiceninja-sync.git"
         }
     ]
 }

@@ -64,6 +64,7 @@ class Client extends EntityModel
         'show_tasks_in_portal',
         'send_reminders',
         'custom_messages',
+        'toggl_id',
     ];
 
     /**
