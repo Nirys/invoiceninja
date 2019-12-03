@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f22f33d3d08c075c3c4a81c9e9e394b",
+    "content-hash": "278b1737c4b52546ba5bda37b80ff8f0",
     "packages": [
         {
             "name": "abdala/omnipay-pagseguro",
@@ -6038,16 +6038,16 @@
         },
         {
             "name": "nirys/toggl-invoiceninja-sync",
-            "version": "v2.0.3",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nirys/toggl-invoiceninja-sync.git",
-                "reference": "9b1886f7b065d77ad07450ded84cdd81d4495df2"
+                "reference": "76b7daa590ad4ff682e7612ced4ffca0cf6d4262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nirys/toggl-invoiceninja-sync/zipball/9b1886f7b065d77ad07450ded84cdd81d4495df2",
-                "reference": "9b1886f7b065d77ad07450ded84cdd81d4495df2",
+                "url": "https://api.github.com/repos/Nirys/toggl-invoiceninja-sync/zipball/76b7daa590ad4ff682e7612ced4ffca0cf6d4262",
+                "reference": "76b7daa590ad4ff682e7612ced4ffca0cf6d4262",
                 "shasum": ""
             },
             "require": {
@@ -6090,9 +6090,9 @@
             ],
             "description": "Sync toggl loggings to invoiceninja",
             "support": {
-                "source": "https://github.com/Nirys/toggl-invoiceninja-sync/tree/v2.0.3"
+                "source": "https://github.com/Nirys/toggl-invoiceninja-sync/tree/v2.0.4"
             },
-            "time": "2019-12-02T18:54:46+00:00"
+            "time": "2019-12-03T10:41:17+00:00"
         },
         {
             "name": "nwidart/laravel-modules",
