@@ -1233,15 +1233,17 @@ class Account extends Eloquent
 
             // White Label
             case FEATURE_WHITE_LABEL:
+                return true;
                 if ($this->isNinjaAccount() || (! $selfHost && $planDetails && ! $planDetails['expires'])) {
-                    return false;
+                    return true;
                 }
                 // Fallthrough
             case FEATURE_REMOVE_CREATED_BY:
-                return ! empty($planDetails); // A plan is required even for self-hosted users
+                return true; ! empty($planDetails); // A plan is required even for self-hosted users
 
             // Enterprise; No Trial allowed; grandfathered for old pro users
             case FEATURE_USERS:// Grandfathered for old Pro users
+                return true;
                 if ($planDetails && $planDetails['trial']) {
                     // Do they have a non-trial plan?
                     $planDetails = $this->getPlanDetails(false, false);
