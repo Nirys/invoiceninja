@@ -155,7 +155,6 @@ return [
         'Laravel\Socialite\SocialiteServiceProvider',
         'Jlapp\Swaggervel\SwaggervelServiceProvider',
         'Maatwebsite\Excel\ExcelServiceProvider',
-        Websight\GcsProvider\CloudStorageServiceProvider::class,
         'Jaybizzle\LaravelCrawlerDetect\LaravelCrawlerDetectServiceProvider',
         Codedge\Updater\UpdaterServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,

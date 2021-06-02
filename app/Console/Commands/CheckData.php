@@ -75,6 +75,8 @@ class CheckData extends Command
             config(['database.default' => $database]);
         }
 
+        $this->checkContacts();
+
         if (! $this->option('client_id')) {
             $this->checkBlankInvoiceHistory();
             $this->checkPaidToDate();
@@ -82,10 +84,8 @@ class CheckData extends Command
         }
 
         //$this->checkInvoices();
-        $this->checkTranslations();
         $this->checkInvoiceBalances();
         $this->checkClientBalances();
-        $this->checkContacts();
         $this->checkUserAccounts();
         //$this->checkLogoFiles();
 
@@ -97,6 +97,7 @@ class CheckData extends Command
             $this->checkFailedJobs();
         }
 
+        $this->checkTranslations();
         $this->logMessage('Done: ' . strtoupper($this->isValid ? RESULT_SUCCESS : RESULT_FAILURE));
         $errorEmail = env('ERROR_EMAIL');
 
@@ -130,6 +131,7 @@ class CheckData extends Command
                     $this->logMessage($language->locale . ' is invalid: ' . $text);
                 }
 
+                /*
                 preg_match('/(.script)/', strtolower($text), $matches);
                 if (count($matches)) {
                     foreach ($matches as $match) {
@@ -141,6 +143,7 @@ class CheckData extends Command
                         break;
                     }
                 }
+                */
             }
         }
 
